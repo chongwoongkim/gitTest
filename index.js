@@ -3,7 +3,7 @@ const app = express()
 const port = 3000
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb+srv://crabby:test@cluster0.edce7.mongodb.net/Cluster0?retryWrites=true&w=majority',{
+mongoose.connect('mongodb+srv:///Cluster0?retryWrites=true&w=majority',{
   useNewUrlParser:true,useUnifiedTopology:true,useCreateIndex:true,useFindAndModify:false
 }).then(
   ()=> console.log('MongoDB Connected...')
